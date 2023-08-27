@@ -1,0 +1,9 @@
+._*
+.DS_Store
+*.log
+*.civ6suo
+*.db
+test*
+Cooked/
+Mods/
+RawAssets/

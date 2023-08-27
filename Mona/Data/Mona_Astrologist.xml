@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Types>
+		<Row Type="UNIT_ASTROLOGIST" Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_ASTROLOGIST_DEFENCE_RING" Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Kind="KIND_ABILITY"/>
+	</Types>
+	<Tags>
+		<Row Tag="CLASS_ASTROLOGIST" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_ASTROLOGIST" Tag="CLASS_ASTROLOGIST"/>
+		<Row Type="UNIT_ASTROLOGIST" Tag="CLASS_OBSERVATION"/>
+		<Row Type="UNIT_ASTROLOGIST" Tag="CLASS_DRONE"/>
+		<Row Type="UNIT_ASTROLOGIST" Tag="CLASS_SUPPORT"/>
+		<Row Type="ABILITY_ASTROLOGIST_DEFENCE_RING" Tag="CLASS_ASTROLOGIST"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_RECON"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_MELEE"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_RANGED"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_SIEGE"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_HEAVY_CAVALRY"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_LIGHT_CAVALRY"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_RANGED_CAVALRY"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_ANTI_CAVALRY"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_HEAVY_CHARIOT"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_LIGHT_CHARIOT"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_NAVAL_MELEE"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_NAVAL_RANGED"/>
+		<Row Type="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Tag="CLASS_NAVAL_RAIDER"/>
+	</TypeTags>
+	<Units>
+		<Row UnitType="UNIT_ASTROLOGIST" Cost="50" Maintenance="2" BaseMoves="2" BaseSightRange="4" ZoneOfControl="true" Domain="DOMAIN_LAND" FormationClass="FORMATION_CLASS_SUPPORT" PromotionClass="PROMOTION_CLASS_SUPPORT" AdvisorType="ADVISOR_CONQUEST" Name="LOC_UNIT_ASTROLOGIST_NAME" Description="LOC_UNIT_ASTROLOGIST_DESCRIPTION" PurchaseYield="YIELD_GOLD" PrereqTech="TECH_ASTROLOGY" TraitType="TRAIT_UNIT_ASTROLOGIST"/>
+	</Units>
+	<UnitReplaces/>
+	<UnitUpgrades/>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_ASTROLOGIST" AiType="UNITTYPE_SIEGE_SUPPORT"/>
+	</UnitAiInfos>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_ASTROLOGIST_DEFENCE_RING" Name="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_NAME" Description="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" Name="LOC_ABILITY_RECEIVE_ASTROLOGY_RING_BONUS_NAME" Description="LOC_ABILITY_RECEIVE_ASTROLOGY_RING_BONUS_DESCRIPTION" Inactive="true" Permanent="false"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_ASTROLOGIST_DEFENCE_RING" ModifierId="MOD_ASTROLOGY_RING_GRANT"/>
+		<Row UnitAbilityType="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS" ModifierId="MOD_ASTROLOGY_RING"/>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row ModifierId="MOD_ASTROLOGY_RING_GRANT" ModifierType="MODIFIER_PLAYER_UNITS_GRANT_ABILITY" SubjectRequirementSetId="REQUIREMENTS_RECEIVE_ASTROLOGY_RING"/>
+		<Row ModifierId="MOD_ASTROLOGY_RING" ModifierType="MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH" SubjectRequirementSetId="REQUIREMENTS_DEFENDER_ASTROLOGY_RING"/>
+	</Modifiers>
+	<ModifierStrings>
+		<Row ModifierId="MOD_ASTROLOGY_RING" Context="Preview" Text="{LOC_ABILITY_RECEIVE_ASTROLOGY_RING_BONUS_DESCRIPTION}"/>
+	</ModifierStrings>
+	<ModifierArguments>
+		<Row ModifierId="MOD_ASTROLOGY_RING" Name="Value" Value="10"/>
+	</ModifierArguments>
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_RECEIVE_ASTROLOGY_RING</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_DEFENDER_ASTROLOGY_RING</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_RECEIVE_ASTROLOGY_RING</RequirementSetId>
+			<RequirementId>REQUIRES_UNIT_ADJACENT_TO_ASTROLOGIST</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_RECEIVE_ASTROLOGY_RING</RequirementSetId>
+			<RequirementId>PLAYER_IS_DEFENDER_REQUIREMENTS</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row>
+			<RequirementId>REQUIRES_UNIT_ADJACENT_TO_ASTROLOGIST</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_ADJACENT_TO_OWNER</RequirementType>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+		<Row>
+			<RequirementId>REQUIRES_UNIT_ADJACENT_TO_ASTROLOGIST</RequirementId>
+			<Name>MinDistance</Name>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_UNIT_ADJACENT_TO_ASTROLOGIST</RequirementId>
+			<Name>MaxDistance</Name>
+			<Value>1</Value>
+		</Row>
+	</RequirementArguments>
+</GameData>

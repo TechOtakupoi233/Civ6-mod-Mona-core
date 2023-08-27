@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<Types>
+		<Row Type="NOTIFICATION_MONA_TRADESCIENCE" Kind="KIND_NOTIFICATION"/>
+		<Row Type="NOTIFICATION_MONA_RESEARCHREWARD" Kind="KIND_NOTIFICATION"/>
+	</Types>
+	<Notifications>
+		<Row NotificationType="NOTIFICATION_MONA_TRADESCIENCE" SeverityType="MID" ExpiresEndOfTurn="true" AutoNotify="true" AutoActivate="false" GroupType="NOTIFICATION_MONA_TRADESCIENCE"/>
+		<Row NotificationType="NOTIFICATION_MONA_RESEARCHREWARD" SeverityType="MID" ExpiresEndOfTurn="true" AutoNotify="true" AutoActivate="false" GroupType="NOTIFICATION_MONA_RESEARCHREWARD"/>
+	</Notifications>
+</GameInfo>

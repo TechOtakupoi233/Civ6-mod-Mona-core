@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+    <EnglishText>
+    </EnglishText>
+    <LocalizedText>
+        <!-- Leader specific pedia text. -->
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_TITLE" Language="zh_Hans_CN">
+            <Text>{LOC_LEADER_MONA_MONDSTANT_NAME}</Text>
+        </Row>
+        <Row Tag="LOC_LEADER_MONA_QUOTE" Language="zh_Hans_CN">
+            <Text>限制物欲是占星术士修行的一部分，只有简朴的生活，才能窥探到世界的真实。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_SUBTITLE" Language="zh_Hans_CN">
+            <Text>占星术流派“水占术”中的天才，对待占星术有自己的原则，以全部的精力与经济投入到科研工作中，甚至衣食住行的花费都控制在最低限度。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+            <Text>莫娜能以夸张的速度获取[ICON_Science]科技值，代价是存不住[ICON_Gold]钱。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+            <Text>莫娜每段时间都会将大多数的存款投入到科研经费中，而她又可以从新研究的科技中获取一些收入。尽可能地发展[ICON_Science]科技和[ICON_Gold]经济，“天才占星术士”可不是浪得虚名。</Text>
+        </Row>
+        
+        <!-- Leader specific historical text. -->
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+            <Text>莫娜是一位奇特的占星术士——与其他的占星术士为了赏钱可以信口雌黄不同，莫娜替人占卜向来都是分文不取，但也不会对占卜的结果加以修饰。即便是会让人不悦的结果，她也会直截了当地告诉对方：「就算你加入冒险家协会，也不会出人头地的」、「你和他没机会的，不久之后他就会远走」等等，诸如此类。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+            <Text>她直言不讳的性格导致来找她占卜的人骤减。莫娜对此并无不满，这让她能将更多的时间用在自己的研究上。[NEWLINE]既然是研究，那么器具、书籍自然是必不可少的，而莫娜唯一的收入来源是为《蒸汽鸟报》的《星座相谈》专栏供稿。每当稿费到账，她总是会将钱优先用在研究上，璃月的古书、须弥的星盘…每一件都价格不菲，等她回过神时，每月剩下的稿酬勉强只够她满足温饱生活的了。</Text>
+        </Row>        
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+            <Text>===============================</Text>
+        </Row>    
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+            <Text>莫娜从登场开始就一直给玩家们带来“穷”的印象，这一点在被各种二创发扬光大后，“莫娜很穷”已然成了玩家们对她的刻板印象。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN">
+            <Text>事实上，莫娜并不是传统意义上的“穷”——她的“穷”只表现在没有现金、衣食住行预算很极限这些方面。莫娜的收入并不低，只是这些收入的绝大部分都被作为科研预算花掉了，她拥有的财产价值可是相当高的。</Text>
+        </Row>
+
+        <Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ASTROLOGIST_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+            <Text>提瓦特大陆上的占星术士们可以通过观测星空和命之座的方式一定程度上“预测未来”。拿地球上的语言来描述，“占星术士”们是一群从事天文观测和理论研究的科学家。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_ASTROLOGICAL_STATION_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+            <Text>占星台是占星术士们为了方便研究，在观测点部署的一系列设施。好的观测点应该具备视野广阔、地脉稳定、远离人居等特性。因此，这些占星台通常出现在各种山崖上。</Text>
+        </Row>
+    </LocalizedText>
+</GameData>

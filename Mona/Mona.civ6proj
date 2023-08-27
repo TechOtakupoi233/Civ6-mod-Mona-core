@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>LOC_MONA_CORE_MOD_TITLE</Name>
+    <Guid>4d793276-aa1d-424c-aa8b-d92b5a02d279</Guid>
+    <ProjectGuid>e52ed1de-2484-4edb-95d4-5fd014d241b7</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>LOC_MONA_CORE_MOD_TEASER</Teaser>
+    <Description>LOC_MONA_CORE_MOD_DESCRIPTION</Description>
+    <Authors>Kashirona</Authors>
+    <SpecialThanks>Dwughjsd, hemmelfort</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>Mona</AssemblyName>
+    <RootNamespace>Mona</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="MonaMondstantConfig" criteria="MondstadtMona"><File>Data/Mona_Config+Mondstant.xml</File></UpdateDatabase><UpdateDatabase id="MonaSukSelectorConfig" criteria="SukSelectorMona"><File>Data/Mona_Config+SCSS.sql</File></UpdateDatabase><UpdateIcons id="MonaIcons"><File>Data/Mona_Icons.sql</File></UpdateIcons><UpdateText id="MonaCoreText"><File>Text/Mona_CoreText.xml</File></UpdateText><UpdateColors id="MonaColors"><File>Data/Mona_Colors.xml</File></UpdateColors><UpdateArt id="MonaArt"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="MonaData"><File>Data/Mona_Leader.xml</File><File>Data/Mona_Astrologist.xml</File><File>Data/Mona_Amenities_Modifiers.sql</File><File>Data/Mona_Stellaris_Phantasm.xml</File><File>UI/Mona_Notifications.xml</File></UpdateDatabase><UpdateDatabase id="MonaDataMondstant"><Criteria>MondstadtMona</Criteria><File>Data/Mona_Leader+Mondstant.xml</File></UpdateDatabase><AddGameplayScripts id="MonaLua"><File>Data/Mona_TradeScience.lua</File><File>Data/Mona_InitialVision.lua</File></AddGameplayScripts><UpdateColors id="MonaColors"><File>Data/Mona_Colors.xml</File></UpdateColors><UpdateIcons id="MonaIcons"><File>Data/Mona_Icons.sql</File></UpdateIcons><UpdateText id="MonaText"><File>Text/Mona_CoreText.xml</File><File>Text/Mona_GameText.xml</File><File>Text/Mona_DiploText.xml</File><File>Text/Mona_CivilopediaText.xml</File></UpdateText><UpdateArt id="MonaArt"><File>(Mod Art Dependency File)</File></UpdateArt><ImportFiles id="MonaNotificationsMgr"><Properties><LuaContext>ActionPanel</LuaContext></Properties><File>UI/Mona_Notifications.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="MondstadtMona"><ModInUse>d7b995ea-e5f6-4dd5-bc4b-2d1da05075c2</ModInUse></Criteria><Criteria id="SukSelectorMona"><ModInUse>60092bdd-ce39-4319-aef6-baea505c7c45</ModInUse></Criteria>
+    <Criteria id="IESSMona"><LeaderPlayable>Players:Expansion2_Players::LEADER_MONA,</LeaderPlayable><RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse></Criteria><Criteria id="SecretSocieties"><ConfigurationValueMatches><Group>Game</Group><ConfigurationId>GAMEMODE_SECRETSOCIETIES</ConfigurationId><Value>1</Value></ConfigurationValueMatches></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <LocalizedTextData><![CDATA[<LocalizedText><Text id="LOC_MONA_CORE_MOD_TITLE"><en_US>Astrologist Mona Megistus</en_US><zh_Hans_CN>阿斯托洛吉斯·莫娜·梅姬斯图斯</zh_Hans_CN></Text><Text id="LOC_MONA_CORE_MOD_TEASER"><en_US>New Leader - Astrologist Mona Megistus.</en_US><zh_Hans_CN>新领袖——阿斯托洛吉斯·莫娜·梅姬斯图斯。</zh_Hans_CN></Text><Text id="LOC_MONA_CORE_MOD_DESCRIPTION"><en_US>Contains a new leader.</en_US><zh_Hans_CN>包含1个新领袖。</zh_Hans_CN></Text></LocalizedText>]]></LocalizedTextData>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="LOC_EXPANSION2_MOD_TITLE" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+  <Reference type="Mod" title="MondstantKlee" id="d7b995ea-e5f6-4dd5-bc4b-2d1da05075c2" />
+  <Reference type="Mod" title="Sukritact's Civ Selection Screen" id="d7b995ea-e5f6-4dd5-bc4b-2d1da05075c2" />
+</Associations>]]></AssociationData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mona.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data" />
+    <Folder Include="Text\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Mona_Amenities_Modifiers.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Astrologist.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Colors.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Config+Mondstant.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Config+SCSS.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_InitialVision.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Leader+Mondstant.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_Stellaris_Phantasm.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Mona_TradeScience.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Mona_CivilopediaText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Mona_CoreText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Mona_DiploText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Mona_GameText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Mona_Notifications.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Mona_Notifications.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Mona_SFX.lua">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

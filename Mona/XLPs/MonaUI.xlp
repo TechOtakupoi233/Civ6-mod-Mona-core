@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="MonaUI"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_256"/>
+			<m_ObjectName text="ICON_LEADER_MONA_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_32"/>
+			<m_ObjectName text="ICON_LEADER_MONA_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_45"/>
+			<m_ObjectName text="ICON_LEADER_MONA_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_48"/>
+			<m_ObjectName text="ICON_LEADER_MONA_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_50"/>
+			<m_ObjectName text="ICON_LEADER_MONA_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_55"/>
+			<m_ObjectName text="ICON_LEADER_MONA_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_64"/>
+			<m_ObjectName text="ICON_LEADER_MONA_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_MONA_80"/>
+			<m_ObjectName text="ICON_LEADER_MONA_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_MONA_NEUTRAL"/>
+			<m_ObjectName text="LEADER_MONA_NEUTRAL"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_MONA_THIN"/>
+			<m_ObjectName text="LEADER_MONA_THIN"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_MONA_MONDSTANT_NEUTRAL"/>
+			<m_ObjectName text="LEADER_MONA_NEUTRAL"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_22"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_256"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_32"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_38"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_50"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_80"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MONA_4"/>
+			<m_ObjectName text="BARBAROSSA_4"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MONA_MONDSTANT_4"/>
+			<m_ObjectName text="BARBAROSSA_4"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_MONA_BACKGROUND"/>
+			<m_ObjectName text="LEADER_HOJO_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MONA_1"/>
+			<m_ObjectName text="MONA_1"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MONA_MONDSTANT_1"/>
+			<m_ObjectName text="MONA_1"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_128"/>
+			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_256"/>
+			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_32"/>
+			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_38"/>
+			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_50"/>
+			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_80"/>
+			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_80"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+
