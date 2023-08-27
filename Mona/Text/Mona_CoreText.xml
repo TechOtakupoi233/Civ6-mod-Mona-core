@@ -5,34 +5,46 @@
         <Row Tag="LOC_LEADER_MONA_MONDSTANT_NAME" Text="{LOC_LEADER_MONA_NAME}({LOC_CIVILIZATION_MONDSTADT_NAME})"/>
         <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_NAME" Text="The Great Astrologist"/>
         <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_DESCRIPTION">
-            <Text>Every 5 Turn, all of[ICON_Gold]Gold balance will turn into[ICON_Science]Science by a 2:1 ratio. The civiliazation with highest[ICON_Science]Science(except Mona herself) will receive these[ICON_Gold]Gold. [NEWLINE]Every Technology done researching will return[ICON_Gold]Gold, by half of[ICON_Science]Science the Technology required. Free Technology "ASTROLOGY" and "NAVI". Has extra initial vision.</Text>
+            <Text>Every 5 Turn, all of[ICON_Gold]Gold balance will turn into[ICON_Science]Science by a 2:1 ratio. The civilization  with highest[ICON_Science]Science(except Mona herself) will receive these[ICON_Gold]Gold. [NEWLINE]Every Technology done researching will return[ICON_Gold]Gold, by half of[ICON_Science]Science the Technology cost. [NEWLINE]Culture Bomb adjacent tiles when completing a Campus. Campus district's [ICON_SCIENCE] Science adjacency bonus provides [ICON_PRODUCTION] Production as well. Free Technology "ASTROLOGY" and "NAVI". Has extra initial vision.</Text>
         </Row>
-        <Row Tag="LOC_UNIT_ASTROLOGIST_NAME" Text="Astrologist"/>
+        <Row Tag="LOC_UNIT_ASTROLOGIST_NAME" Text="Astrologer"/>
         <Row Tag="LOC_UNIT_ASTROLOGIST_DESCRIPTION">
-            <Text>Mona's Special Unit. Can see through features and terrains. Provide adjacent ally units with Defensive[ICON_Strength]strength bonus. Provide +1[ICON_Range]to adjacent Seige units.</Text>
+            <Text>Mona's unique Support unit. Can see through features and terrains. Provide adjacent ally units with Defensive[ICON_Strength]strength bonus. Provide +1[ICON_Range]to adjacent Seige units.</Text>
         </Row>
-        <Row Tag="LOC_IMPROVEMENT_ASTROLOGICAL_STATION_NAME" Text="Astrological station"/>
-        <Row Tag="LOC_IMPROVEMENT_ASTROLOGICAL_STATION_DESCRIPTION">
-            <Text>Mona's Unique Improvement. Must be built on mountains. Provide massive adjacent bonus for Campus. +1[ICON_GreatScientist]Great scientist point。</Text>
+        <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="Temple of the Star Latitudes"/>
+        <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION">
+            <Text>A building unique to Mona. Comes with palace. +1[ICON_GreatScientist]Great Scientist Point.</Text>
         </Row>
     </EnglishText>
     <LocalizedText>
+    <!-- Simplified Chinese -->
         <Row Tag="LOC_LEADER_MONA_NAME" Text="阿斯托洛吉斯·莫娜·梅姬斯图斯" Language="zh_Hans_CN"/>
         <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_NAME" Text="伟大的占星术士" Language="zh_Hans_CN"/>
         <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_DESCRIPTION" Language="zh_Hans_CN">
-            <Text>每5回合，国库[ICON_Gold]金币将按2:1的比例转换为[ICON_Science]科技值，[ICON_Science]科技值最高的文明(除莫娜自身外)会收到这笔[ICON_Gold]资金。每研究完成一个科技，就获得其所消耗的[ICON_Science]科技值二分之一的[ICON_Gold]金币。[NEWLINE]建成学院区域时施放文化炸弹，学院区的邻接加成也产出[ICON_Production]生产力。[NEWLINE]自动获得“占星术”和“天文导航”科技。游戏开始时获得额外视野。</Text>
+            <Text>每5回合，国库[ICON_Gold]金币将按2:1的比例转换为[ICON_Science]科技值，[ICON_Science]科技值最高的文明(除莫娜自身外)会收到这笔[ICON_Gold]资金。每研究完成一个科技，就获得其所消耗的[ICON_Science]科技值二分之一的[ICON_Gold]金币。[NEWLINE]建成学院区域时施放文化炸弹，学院区域的[ICON_SCIENCE]科技值相邻加成也可提供[ICON_PRODUCTION]生产力。[NEWLINE]自动获得“占星术”和“天文导航”科技。游戏开始时获得额外视野。</Text>
         </Row>
         <Row Tag="LOC_UNIT_ASTROLOGIST_NAME" Text="占星术士" Language="zh_Hans_CN"/>
         <Row Tag="LOC_UNIT_ASTROLOGIST_DESCRIPTION" Language="zh_Hans_CN">
             <Text>莫娜的特色支援单位。拥有可穿越地形和地貌的增强视野。相邻的友方单位在防御时获得[ICON_Strength]战斗力加成。能够为相邻的攻城单位提供+1[ICON_Range]射程。</Text>
         </Row>
-        <Row Tag="LOC_IMPROVEMENT_ASTROLOGICAL_STATION_NAME" Text="占星台" Language="zh_Hans_CN"/>
-        <Row Tag="LOC_IMPROVEMENT_ASTROLOGICAL_STATION_DESCRIPTION" Language="zh_Hans_CN">
-            <Text>莫娜的特色改良设施。必须修建在山脉上，为学院区域提供巨量邻接加成。+1[ICON_GreatScientist]大科学家点数。</Text>
+        <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="星纬殿堂" Language="zh_Hans_CN"/>
+        <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION" Language="zh_Hans_CN">
+            <Text>莫娜的特色建筑，随宫殿附赠。+1[ICON_GreatScientist]大科学家点数。</Text>
         </Row>
-        <Row Tag="LOC_BUILDING_STELLARIS_PHANTASM_NAME" Text="星纬殿堂" Language="zh_Hans_CN"/>
-        <Row Tag="LOC_BUILDING_STELLARIS_PHANTASM_DESCRIPTION" Language="zh_Hans_CN">
-            <Text>莫娜的特色建筑，随宫殿附赠。每通过特性“伟大的占星术士”获取100科技值，此建筑每回合产出的科技就+1。+1[ICON_GreatScientist]大科学家点数。</Text>
+
+    <!-- Traditional Chinese -->
+        <Row Tag="LOC_LEADER_MONA_NAME" Text="阿斯托洛吉斯·莫娜·梅姬斯圖斯" Language="zh_Hant_HK"/>
+        <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_NAME" Text="偉大的占星術士" Language="zh_Hant_HK"/>
+        <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>每5回合，國庫[ICON_Gold]金幣將按2:1的比例轉換為[ICON_Science]科技值，[ICON_Science]科技值最高的文明(除莫娜自身外)會收到這筆[ICON_Gold]資金。每研究完成一個科技，就獲得其所消耗的[ICON_Science]科技值二分之一的[ICON_Gold]金幣。[NEWLINE]建成學院區域時施放文化炸彈，學院區域的[ICON_SCIENCE]科技值相鄰加成也可提供[ICON_PRODUCTION]生產力。[NEWLINE]自動獲得“占星術”和“天文導航”科技。遊戲開始時獲得額外視野。</Text>
+        </Row>
+        <Row Tag="LOC_UNIT_ASTROLOGIST_NAME" Text="占星術士" Language="zh_Hant_HK"/>
+        <Row Tag="LOC_UNIT_ASTROLOGIST_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>莫娜的特色支援單位。擁有可穿越地形和地貌的增強視野。相鄰的友方單位在防禦時獲得[ICON_Strength]戰鬥力加成。能夠為相鄰的攻城單位提供+1[ICON_Range]射程。</Text>
+        </Row>
+        <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="星緯殿堂" Language="zh_Hant_HK"/>
+        <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION" Language="zh_Hant_HK">
+            <Text>莫娜的特色建築，隨宮殿附贈。+1[ICON_GreatScientist]大科學家點數。</Text>
         </Row>
     </LocalizedText>
 </GameData>

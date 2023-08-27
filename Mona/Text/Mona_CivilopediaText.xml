@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
     <EnglishText>
-    </EnglishText>
-    <LocalizedText>
-        <!-- Leader specific pedia text. -->
-        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_TITLE" Language="zh_Hans_CN">
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_TITLE">
             <Text>{LOC_LEADER_MONA_MONDSTANT_NAME}</Text>
         </Row>
+        <Row Tag="LOC_LEADER_MONA_QUOTE">
+            <Text>Astrologers must rid themselves of material desires. Only by ridding oneself of clutter can one see the true world around them.</Text>
+        </Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_SUBTITLE">
+			<Text></Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_CAPSULE_BODY">
+			<Text></Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_DETAILED_BODY">
+			<Text></Text>
+		</Row>
+
+		<!-- Leader specific historical text. -->
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_1">
+			<Text>Mona is unique among astrologers — others may speak with great ostentation for money, but Mona has never done so. Nor does she dress up or mince her words, even if her results are unpleasant to hear: "You won't amount to anything even if you join the Adventurers' Guild." "You've got no chance with him. In fact, he will soon leave you" — such is the nature of her rejoinders.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_2">
+			<Text>Her blunt nature has resulted in plummeting numbers of people coming to have their fortunes told. But Mona isn't one to complain, for that just leaves her with more time for her personal research.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_3">
+			<Text>===============================</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_4">
+			<Text></Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_5">
+			<Text></Text>
+		</Row>
+
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ASTROLOGIST_CHAPTER_HISTORY_PARA_1">
+			<Text>Astrologers on the Teyvat can "predict the future" to a certain extent by observing the stars and the constellation. In Earth language, "Astrologers" are a group of scientists engaged in astronomical observation and theoretical research.</Text>
+		</Row>
+    </EnglishText>
+    <LocalizedText>
+        <!-- Simplified Chinese -->
+        <!-- Leader specific pedia text. -->
         <Row Tag="LOC_LEADER_MONA_QUOTE" Language="zh_Hans_CN">
             <Text>限制物欲是占星术士修行的一部分，只有简朴的生活，才能窥探到世界的真实。</Text>
         </Row>
@@ -42,6 +76,45 @@
         </Row>
         <Row Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_ASTROLOGICAL_STATION_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
             <Text>占星台是占星术士们为了方便研究，在观测点部署的一系列设施。好的观测点应该具备视野广阔、地脉稳定、远离人居等特性。因此，这些占星台通常出现在各种山崖上。</Text>
+        </Row>
+
+    <!-- Traditional Chinese -->
+        <!-- Leader specific pedia text. -->
+        <Row Tag="LOC_LEADER_MONA_QUOTE" Language="zh_Hant_HK">
+            <Text>限制物慾是占星術士修行的一部分，只有簡樸的生活，才能窺探到世界的真實。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_SUBTITLE" Language="zh_Hant_HK">
+            <Text>占星術流派“水佔術”中的天才，對待占星術有自己的原則，以全部的精力與經濟投入到科研工作中，甚至衣食住行的花費都控制在最低限度。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+            <Text>莫娜能以誇張的速度獲取[ICON_Science]科技值，代價是存不住[ICON_Gold]錢。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+            <Text>莫娜每段時間都會將大多數的存款投入到科研經費中，而她又可以從新研究的科技中獲取一些收入。儘可能地發展[ICON_Science]科技和[ICON_Gold]經濟，“天才占星術士”可不是浪得虛名。</Text>
+        </Row>
+        
+        <!-- Leader specific historical text. -->
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+            <Text>莫娜是一位奇特的占星術士——與其他的占星術士為了賞錢可以信口雌黃不同，莫娜替人占卜向來都是分文不取，但也不會對占卜的結果加以修飾。即便是會讓人不悅的結果，她也會直截了當地告訴對方：「就算你加入冒險家協會，也不會出人頭地的」、「你和他沒機會的，不久之後他就會遠走」等等，諸如此類。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+            <Text>她直言不諱的性格導致來找她占卜的人驟減。莫娜對此並無不滿，這讓她能將更多的時間用在自己的研究上。[NEWLINE]既然是研究，那麼器具、書籍自然是必不可少的，而莫娜唯一的收入來源是為《蒸汽鳥報》的《星座相談》專欄供稿。每當稿費到賬，她總是會將錢優先用在研究上，璃月的古書、須彌的星盤…每一件都價格不菲，等她回過神時，每月剩下的稿酬勉強只夠她滿足溫飽生活的了。</Text>
+        </Row>        
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+            <Text>===============================</Text>
+        </Row>    
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+            <Text>莫娜從登場開始就一直給玩家們帶來“窮”的印象，這一點在被各種二創發揚光大後，“莫娜很窮”已然成了玩家們對她的刻板印象。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MONA_MONDSTANT_CHAPTER_HISTORY_PARA_5" Language="zh_Hant_HK">
+            <Text>事實上，莫娜並不是傳統意義上的“窮”——她的“窮”只表現在沒有現金、衣食住行預算很極限這些方面。莫娜的收入並不低，只是這些收入的絕大部分都被作為科研預算花掉了，她擁有的財產價值可是相當高的。</Text>
+        </Row>
+
+        <Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ASTROLOGIST_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+            <Text>提瓦特大陸上的占星術士們可以通過觀測星空和命之座的方式一定程度上“預測未來”。拿地球上的語言來描述，“占星術士”們是一群從事天文觀測和理論研究的科學家。</Text>
+        </Row>
+        <Row Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_ASTROLOGICAL_STATION_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+            <Text>占星臺是占星術士們為了方便研究，在觀測點部署的一系列設施。好的觀測點應該具備視野廣闊、地脈穩定、遠離人居等特性。因此，這些占星臺通常出現在各種山崖上。</Text>
         </Row>
     </LocalizedText>
 </GameData>

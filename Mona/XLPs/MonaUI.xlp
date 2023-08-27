@@ -98,28 +98,64 @@
 			<m_ObjectName text="MONA_1"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_128"/>
-			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_128"/>
+			<m_EntryID text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_128"/>
+			<m_ObjectName text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_128"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_256"/>
-			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_256"/>
+			<m_EntryID text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_256"/>
+			<m_ObjectName text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_256"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_32"/>
-			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_32"/>
+			<m_EntryID text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_32"/>
+			<m_ObjectName text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_32"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_38"/>
-			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_38"/>
+			<m_EntryID text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_38"/>
+			<m_ObjectName text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_38"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_50"/>
-			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_50"/>
+			<m_EntryID text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_50"/>
+			<m_ObjectName text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_50"/>
 		</Element>
 		<Element>
-			<m_EntryID text="ICON_BUILDING_STELLARIS_PHANTASM_80"/>
-			<m_ObjectName text="ICON_BUILDING_STELLARIS_PHANTASM_80"/>
+			<m_EntryID text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_80"/>
+			<m_ObjectName text="ICON_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MOMENT_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES"/>
+			<m_ObjectName text="MOMENT_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES"/>
+		</Element>
+		<Element>
+			<m_EntryID text="MOMENT_UNIT_ASTROLOGIST"/>
+			<m_ObjectName text="MOMENT_UNIT_ASTROLOGIST"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_PORTRAIT_200"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_PORTRAIT_200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_PORTRAIT_256"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_PORTRAIT_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_PORTRAIT_38"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_PORTRAIT_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_PORTRAIT_50"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_PORTRAIT_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_PORTRAIT_70"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_PORTRAIT_70"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_ASTROLOGIST_PORTRAIT_95"/>
+			<m_ObjectName text="ICON_UNIT_ASTROLOGIST_PORTRAIT_95"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_MONA_MONDSTANT_BACKGROUND"/>
+			<m_ObjectName text="LEADER_HOJO_BACKGROUND"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

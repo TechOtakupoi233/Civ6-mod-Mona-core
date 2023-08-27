@@ -224,9 +224,7 @@
 		</Element>
 		<Element>
 			<consumerName text="Civilizations"/>
-			<relativeArtDefPaths>
-				<Element text="Civilizations.artdef"/>
-			</relativeArtDefPaths>
+			<relativeArtDefPaths/>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
 		</Element>
