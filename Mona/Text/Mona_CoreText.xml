@@ -13,7 +13,7 @@
         </Row>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="Temple of the Star Latitudes"/>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION">
-            <Text>A building unique to Mona. Comes with palace. +1[ICON_GreatScientist]Great Scientist Point.</Text>
+            <Text>A building unique to Mona. One per player. +1[ICON_Science]Science and [ICON_Culture]Culture per 100[ICON_Science]gained via trait "The Great Astrologist". +1[ICON_GreatScientist]Great Scientist Point.</Text>
         </Row>
     </EnglishText>
     <LocalizedText>
@@ -29,7 +29,7 @@
         </Row>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="星纬殿堂" Language="zh_Hans_CN"/>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION" Language="zh_Hans_CN">
-            <Text>莫娜的特色建筑，随宫殿附赠。+1[ICON_GreatScientist]大科学家点数。</Text>
+            <Text>莫娜的特色建筑，只能建造一个。每通过特性“伟大的占星术士”获取100[ICON_Science]科技值（标准速度下），此建筑就+1[ICON_Science]科技值和[ICON_Culture]文化值。+1[ICON_GreatScientist]大科学家点数。</Text>
         </Row>
 
     <!-- Traditional Chinese -->
@@ -44,7 +44,7 @@
         </Row>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="星緯殿堂" Language="zh_Hant_HK"/>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION" Language="zh_Hant_HK">
-            <Text>莫娜的特色建築，隨宮殿附贈。+1[ICON_GreatScientist]大科學家點數。</Text>
+            <Text>莫娜的特色建築，只能建造一個。每通過特性“偉大的占星術士”獲取100[ICON_Science]科技值（標準速度下），此建築就+1[ICON_Science]科技值和[ICON_Culture]文化值。+1[ICON_GreatScientist]大科學家點數。</Text>
         </Row>
     </LocalizedText>
 </GameData>
