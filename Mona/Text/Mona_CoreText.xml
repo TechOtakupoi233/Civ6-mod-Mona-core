@@ -21,15 +21,15 @@
         <Row Tag="LOC_LEADER_MONA_NAME" Text="阿斯托洛吉斯·莫娜·梅姬斯图斯" Language="zh_Hans_CN"/>
         <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_NAME" Text="伟大的占星术士" Language="zh_Hans_CN"/>
         <Row Tag="LOC_TRAIT_GREAT_ASTROLOGIST_DESCRIPTION" Language="zh_Hans_CN">
-            <Text>每5回合，国库[ICON_Gold]金币将按2:1的比例转换为[ICON_Science]科技值，[ICON_Science]科技值最高的文明(除莫娜自身外)会收到这笔[ICON_Gold]资金。每研究完成一个科技，就获得其所消耗的[ICON_Science]科技值二分之一的[ICON_Gold]金币。[NEWLINE]建成学院区域时施放文化炸弹，学院区域的[ICON_SCIENCE]科技值相邻加成也可提供[ICON_PRODUCTION]生产力。[NEWLINE]自动获得“占星术”和“天文导航”科技。游戏开始时获得额外视野。</Text>
+            <Text>每5回合，国库[ICON_Gold]金币将按2:1的比例转换为[ICON_Science]科技值，这笔[ICON_Gold]资金中的50%会由莫娜的盟友（如果有）平分，剩余的由[ICON_Science]科技值最高且不与莫娜敌对的文明接收。通过特性消耗的金币[ICON_Gold]会持续累计，并在可用时自动购买学院区域与其中的建筑。[NEWLINE]每研究完成一个科技，就获得其所消耗的[ICON_Science]科技值二分之一的[ICON_Gold]金币。若是超前时代的科技，则获得的[ICON_Gold]金币翻倍，且提供一个当前时代的市政提升[ICON_CivicBoosted]。[NEWLINE]自动获得“占星术”和“天文导航”科技。游戏开始时获得额外视野。</Text>
         </Row>
         <Row Tag="LOC_UNIT_ASTROLOGIST_NAME" Text="占星术士" Language="zh_Hans_CN"/>
         <Row Tag="LOC_UNIT_ASTROLOGIST_DESCRIPTION" Language="zh_Hans_CN">
-            <Text>莫娜的特色支援单位。拥有可穿越地形和地貌的增强视野。相邻的友方单位在防御时获得[ICON_Strength]战斗力加成。能够为相邻的攻城单位提供+1[ICON_Range]射程。</Text>
+            <Text>莫娜的特色支援单位。拥有可穿越地形和地貌的增强视野。相邻的友方单位+1[ICON_Range]射程，并在防御时获得[ICON_Strength]战斗力加成。</Text>
         </Row>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="星纬殿堂" Language="zh_Hans_CN"/>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION" Language="zh_Hans_CN">
-            <Text>莫娜的特色建筑，只能建造一个。每通过特性“伟大的占星术士”获取100[ICON_Science]科技值（标准速度下），此建筑就+1[ICON_Science]科技值和[ICON_Culture]文化值。+1[ICON_GreatScientist]大科学家点数。</Text>
+            <Text>莫娜的特色建筑，只能建造一个。每通过特性“伟大的占星术士”获取100[ICON_Science]科技值，此建筑就+1[ICON_Science]科技值和[ICON_Culture]文化值。如果处于战争中，此建筑的全部产出转换为双倍[ICON_Production]生产力。+1[ICON_GreatScientist]大科学家点数。</Text>
         </Row>
 
     <!-- Traditional Chinese -->
@@ -44,7 +44,7 @@
         </Row>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_NAME" Text="星緯殿堂" Language="zh_Hant_HK"/>
         <Row Tag="LOC_BUILDING_TEMPLE_OF_THE_STAR_LATITUDES_DESCRIPTION" Language="zh_Hant_HK">
-            <Text>莫娜的特色建築，只能建造一個。每通過特性“偉大的占星術士”獲取100[ICON_Science]科技值（標準速度下），此建築就+1[ICON_Science]科技值和[ICON_Culture]文化值。+1[ICON_GreatScientist]大科學家點數。</Text>
+            <Text>莫娜的特色建築，只能建造一個。每通過特性“偉大的占星術士”獲取100[ICON_Science]科技值，此建築就+1[ICON_Science]科技值和[ICON_Culture]文化值。+1[ICON_GreatScientist]大科學家點數。</Text>
         </Row>
     </LocalizedText>
 </GameData>

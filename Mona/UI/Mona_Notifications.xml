@@ -5,7 +5,7 @@
 		<Row Type="NOTIFICATION_MONA_RESEARCHREWARD" Kind="KIND_NOTIFICATION"/>
 	</Types>
 	<Notifications>
-		<Row NotificationType="NOTIFICATION_MONA_TRADESCIENCE" SeverityType="MID" ExpiresEndOfTurn="true" AutoNotify="true" AutoActivate="false" GroupType="NOTIFICATION_MONA_TRADESCIENCE"/>
-		<Row NotificationType="NOTIFICATION_MONA_RESEARCHREWARD" SeverityType="MID" ExpiresEndOfTurn="true" AutoNotify="true" AutoActivate="false" GroupType="NOTIFICATION_MONA_RESEARCHREWARD"/>
+		<Row NotificationType="NOTIFICATION_MONA_TRADESCIENCE" SeverityType="MID" ExpiresEndOfTurn="true" AutoNotify="false" AutoActivate="false" ShowIconSinglePlayer="true" GroupType="NOTIFICATION_MONA_TRADESCIENCE"/>
+		<Row NotificationType="NOTIFICATION_MONA_RESEARCHREWARD" SeverityType="MID" ExpiresEndOfTurn="true" AutoNotify="false" AutoActivate="false" ShowIconSinglePlayer="true" GroupType="NOTIFICATION_MONA_RESEARCHREWARD"/>
 	</Notifications>
 </GameInfo>

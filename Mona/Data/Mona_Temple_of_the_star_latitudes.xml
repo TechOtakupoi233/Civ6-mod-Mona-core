@@ -21,15 +21,7 @@
 	<BuildingModifiers>
 	</BuildingModifiers>
 	<Modifiers>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_SCIENCE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE"/>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_CULTURE" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE"/>
 	</Modifiers>
 	<ModifierArguments>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_SCIENCE" Name="BuildingType" Value="BUILDING_TEMPLE_OF_THE_STAR_LATITUDES"/>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_SCIENCE" Name="YieldType" Value="YIELD_SCIENCE"/>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_SCIENCE" Name="Amount" Value="1"/>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_CULTURE" Name="BuildingType" Value="BUILDING_TEMPLE_OF_THE_STAR_LATITUDES"/>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_CULTURE" Name="YieldType" Value="YIELD_CULTURE"/>
-		<Row ModifierId="MOD_TEMPLE_OF_THE_STAR_LATITUDES_CULTURE" Name="Amount" Value="1"/>
 	</ModifierArguments>
 </GameData>

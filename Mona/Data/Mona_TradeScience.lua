@@ -2,7 +2,7 @@ include("GameCapabilities");
 GAME_SPEED = GameConfiguration.GetGameSpeedType()
 GAME_SPEED_MULTIPLIER = GameInfo.GameSpeeds[GAME_SPEED] and GameInfo.GameSpeeds[GAME_SPEED].CostMultiplier / 100 or 1
 
--- DebugON = true
+DebugON = true
 -- 回合计数器
 function TurnCounter()
     -- 获取当前回合数，if回合数能被5整除
@@ -38,7 +38,6 @@ function MonaTradeScience(MonaIDs, HighestSciencePlayerID)
     for i, playerID in pairs(MonaIDs) do
         local pPlayer = Players[playerID]
         local MonaCapitalText, HighestSciencePlayerCapitalText
-        if pPlayer ~= nil then
         -- 获取金币余额并计算转换的科技值
         TradingGold = pPlayer:GetTreasury():GetGoldBalance()
         TradingScience = TradingGold / 2
@@ -55,76 +54,55 @@ function MonaTradeScience(MonaIDs, HighestSciencePlayerID)
         if DebugON then print("Sending " .. TradingGold .. " Gold to Player " .. HighestSciencePlayerID) end
         HighestSciencePlayerCapitalText = '[COLOR_FLOAT_GOLD]' .. '+' .. string.format("%.1f", TradingGold) .. GameInfo.Yields['YIELD_GOLD'].IconString .. '[ENDCOLOR]'
         CapitalWorldViewTextSender(HighestSciencePlayerID, HighestSciencePlayerCapitalText)
-        end
     end
 end
-
-GAME_SPEED = GameConfiguration.GetGameSpeedType()
-GAME_SPEED_MULTIPLIER = GameInfo.GameSpeeds[GAME_SPEED] and GameInfo.GameSpeeds[GAME_SPEED].CostMultiplier / 100 or 1
 
 -- 累积奖励计算
 function TradeScienceCalc(pPlayer, TradingScience)
 	if DebugON and pPlayer == nil then print("Fatal: pPlayer = nil") return end
     -- 初始化存档数据
-    if pPlayer:GetProperty("SUM.MonaTradeScience") == nil then
-        pPlayer:SetProperty("SUM.MonaTradeScience", 0)
-        pPlayer:SetProperty("sValue.MonaTradeScience", 0)
-        pPlayer:SetProperty("gValue.MonaTradeScience", 0)
-        if DebugON then print("Initiating PlayerProperties: " .. pPlayer:GetProperty("SUM.MonaTradeScience")) end
+    if pPlayer:GetProperty("sScience.MonaTradeScience") == nil then
+        pPlayer:SetProperty("sScience.MonaTradeScience", 0)
+        pPlayer:SetProperty("sGold.MonaTradeScience", 0)
+        if DebugON then print("Initiating PlayerProperties: " .. pPlayer:GetProperty("sScience.MonaTradeScience")) end
     end
     -- 更新本回合数据
-    local SUM, sValue, gValue = pPlayer:GetProperty("SUM.MonaTradeScience"), pPlayer:GetProperty("sValue.MonaTradeScience"), pPlayer:GetProperty("gValue.MonaTradeScience")
-    pPlayer:SetProperty("SUM.MonaTradeScience", SUM + TradingScience)
-    pPlayer:SetProperty("sValue.MonaTradeScience", sValue + TradingScience)
-    pPlayer:SetProperty("gValue.MonaTradeScience", gValue + TradingScience * 2)
-    local sValue, gValue = pPlayer:GetProperty("sValue.MonaTradeScience"), pPlayer:GetProperty("gValue.MonaTradeScience")
-    -- 每100科技值（标准速度下）为玩家附加一个加星纬殿堂产出的Modifier(+1科技)
-    if sValue >= 100 then repeat sValue = sValue - 100 * GAME_SPEED_MULTIPLIER
-        pPlayer:AttachModifierByID(GameInfo.Modifiers["MOD_TEMPLE_OF_THE_STAR_LATITUDES_SCIENCE"].ModifierId)
-        pPlayer:AttachModifierByID(GameInfo.Modifiers["MOD_TEMPLE_OF_THE_STAR_LATITUDES_CULTURE"].ModifierId)
-        until sValue < 100
-        pPlayer:SetProperty("sValue.MonaTradeScience", sValue)
-        if DebugON then print("+1 Science for Temple") end
-    end
-    if DebugON then print("SUM is " .. pPlayer:GetProperty("SUM.MonaTradeScience")) end
+    local sScience, sGold = tonumber(pPlayer:GetProperty("sScience.MonaTradeScience")) + TradingScience, tonumber(pPlayer:GetProperty("sGold.MonaTradeScience"))+ TradingScience * 2
+    pPlayer:SetProperty("sScience.MonaTradeScience", sScience)
+    pPlayer:SetProperty("sGold.MonaTradeScience", sGold)
+    TSLValueProvider(pPlayer, sScience)
+    if DebugON then print("sScience: " .. sScience .. "sGold: " .. sGold) end
+    if DebugON then print("Game speed: " .. GAME_SPEED_MULTIPLIER) end
 end
 
--- 自动购置学院区建筑
-function MonaAutoBuyCampusBuildings(pPlayer, gValue)
-    -- 从数据库获取建筑原价并计算游戏速度影响
-    dCampus = GameInfo.Districts["DISTRICT_CAMPUS"].Index;
-    bLib, cLib = GameInfo.Buildings["BUILDING_LIBRARY"].Index, GameInfo.Buildings["BUILDING_LIBRARY"].Cost * GAME_SPEED_MULTIPLIER
-    bUni, cUni = GameInfo.Buildings["BUILDING_UNIVERSITY"].Index, GameInfo.Buildings["BUILDING_UNIVERSITY"].Cost * GAME_SPEED_MULTIPLIER
-    bRes, cRes = GameInfo.Buildings["BUILDING_RESEARCH_LAB"].Index, GameInfo.Buildings["BUILDING_RESEARCH_LAB"].Cost * GAME_SPEED_MULTIPLIER
-    local pCities = pPlayer:GetCities();
-    local pCity;
-    for ii, pCity in pCities:Members() do
-        if (pCity ~= nil) then
-            local pCityBuildings = pCity:GetBuildings();
-            local pCityDistricts = pCity:GetDistricts();
-            local pCityBuildQueue = pCity:GetBuildQueue();
-            -- 如果城市没有建筑且累积金币足够则购买
-            if pCityDistricts:HasDistrict(dCampus) and (not pCityBuildings:HasBuilding(bLib)) and gValue >= cLib then
-                pCityBuildQueue:CreateIncompleteBuilding(bLib);
-                gValue = gValue - cLib
-                pPlayer:SetProperty("gValue.MonaTradeScience", gValue)
-                if DebugON then print("Bought a Library in " .. pCity:GetName(pCity)) end
-                return gValue
-            elseif pCityDistricts:HasDistrict(dCampus) and (not pCityBuildings:HasBuilding(bUni)) and gValue >= cUni then
-                pCityBuildQueue:CreateIncompleteBuilding(bUni);
-                gValue = gValue - cUni
-                pPlayer:SetProperty("gValue.MonaTradeScience", gValue)
-                if DebugON then print("Bought a University in " .. pCity:GetName(pCity)) end
-                return gValue
-            elseif pCityDistricts:HasDistrict(dCampus) and (not pCityBuildings:HasBuilding(bRes)) and gValue>= cRes then
-                pCityBuildQueue:CreateIncompleteBuilding(bRes);
-                gValue = gValue - cRes
-                pPlayer:SetProperty("gValue.MonaTradeScience", gValue)
-                if DebugON then print("Bought a Research Lab in " .. pCity:GetName(pCity)) end
-                return gValue
-            end
-        end
+-- 累积值写入到首都单元格属性
+function TSLValueProvider(pPlayer, sScience)
+    binsScience = intToBins(math.floor(sScience / 100))
+	pCapital = pPlayer:GetCities():GetCapitalCity()
+	pCapitalPlot = pCapital:GetPlot()
+	pCapitalPlot:SetProperty("1.MonaTSL", binsScience[1])
+	pCapitalPlot:SetProperty("2.MonaTSL", binsScience[2])
+	pCapitalPlot:SetProperty("4.MonaTSL", binsScience[3])
+	pCapitalPlot:SetProperty("8.MonaTSL", binsScience[4])
+	pCapitalPlot:SetProperty("16.MonaTSL", binsScience[5])
+	pCapitalPlot:SetProperty("32.MonaTSL", binsScience[6])
+	pCapitalPlot:SetProperty("64.MonaTSL", binsScience[7])
+	pCapitalPlot:SetProperty("128.MonaTSL", binsScience[8])
+	pCapitalPlot:SetProperty("256.MonaTSL", binsScience[9])
+	pCapitalPlot:SetProperty("512.MonaTSL", binsScience[10])
+end
+
+-- 整数转换至二进制数组
+function intToBins(n)
+    print(n)
+    if n > 1023 then n = 1023 end
+    local bools = {}
+    for i = 1, 10 do
+        bools[i] = n % 2
+        n = math.floor(n / 2)
+        if DebugON then print (bools[i]) end
     end
+    return bools
 end
 
 -- 研究返点
@@ -140,8 +118,19 @@ function MonaResearchReward(ePlayer, eTech)
     pPlayer:GetTreasury():ChangeGoldBalance(RewardGold)
     MonaCapitalText = '[COLOR_FLOAT_GOLD]' .. '+' .. string.format("%d", RewardGold) .. GameInfo.Yields['YIELD_GOLD'].IconString .. '[ENDCOLOR]'
     CapitalWorldViewTextSender(ePlayer, MonaCapitalText)
-    local sTitle = "LOC_NOTIFICATION_MONA_RESEARCHREWARD_TITLE"
-    local sString = ("LOC_NOTIFICATION_MONA_RESEARCHREWARD_STRING_1" .. string.format("%d", RewardGold) .. GameInfo.Yields['YIELD_GOLD'].IconString .. "LOC_NOTIFICATION_MONA_RESEARCHREWARD_STRING_2")
+    MonaNotificationsSender(DB.MakeHash("NOTIFICATION_MONA_RESEARCHREWARD"), RewardGold)
+    end
+end
+
+-- 通知发送器
+function MonaNotificationsSender(nType, nValue1, nValue2)
+    if nType == DB.MakeHash("NOTIFICATION_MONA_TRADESCIENCE") then
+        sTitle = DB.MakeHash("LOC_NOTIFICATION_MONA_TRADESCIENCE_TITLE")
+        sString = ("LOC_NOTIFICATION_MONA_TRADESCIENCE_STRING_1" .. string.format("%d", nValue1) .. GameInfo.Yields['YIELD_GOLD'].IconString .. "LOC_NOTIFICATION_MONA_TRADESCIENCE_2" .. string.format("%d", nValue2 / 2) .. GameInfo.Yields['YIELD_SCIENCE'].IconString .. "LOC_NOTIFICATION_MONA_TRADESCIENCE_STRING_3")
+    elseif nType == DB.MakeHash("NOTIFICATION_MONA_RESEARCHREWARD") then
+        sTitle = DB.MakeHash("LOC_NOTIFICATION_MONA_RESEARCHREWARD_TITLE")
+        sString = ("LOC_NOTIFICATION_MONA_RESEARCHREWARD_STRING_1" .. string.format("%d", nValue1) .. GameInfo.Yields['YIELD_GOLD'].IconString .. "LOC_NOTIFICATION_MONA_RESEARCHREWARD_STRING_2")
+    end
     local notificationData = {};
     notificationData[ParameterTypes.MESSAGE] = sTitle;
     notificationData[ParameterTypes.SUMMARY] = sString;
@@ -151,10 +140,8 @@ function MonaResearchReward(ePlayer, eTech)
     notificationData.AlwaysAutoActivate = true;
     notificationData.AlwaysUnique = true;
     --notificationData.ShowIcon = false;
-    NotificationManager.SendNotification(ePlayer, ResearchRewardNotification, notificationData)
-    end
+    NotificationManager.SendNotification(ePlayer, nType, notificationData)
 end
-
 -- 首都上方显示飘字
 function CapitalWorldViewTextSender(playerID, Incometext)
     pCapital = Players[playerID]:GetCities():GetCapitalCity()

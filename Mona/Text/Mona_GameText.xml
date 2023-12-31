@@ -4,10 +4,10 @@
         <Row Tag="LOC_LOADING_INFO_LEADER_MONA_MONDSTANT">
             <Text>Astrologist Mona Megistus, you are the most talented descendant of the Hydromancy, you can foresee the future of Teyvat’s people. No matter how much pressure life puts on you, you never stop pursuing knowledge. Guide your people to the right path, set sail for the sea of stars.</Text>
         </Row>
-        <Row Tag="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_NAME">
+        <Row Tag="LOC_ABILITY_ASTROLOGY_RING_NAME">
             <Text>Astrology support</Text>
         </Row>
-        <Row Tag="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_DESCRIPTION">
+        <Row Tag="LOC_ABILITY_ASTROLOGY_RING_DESCRIPTION">
             <Text>+10[ICON_Strength]Stength for adjacent ally combat units when defending.</Text>
         </Row>
         <Row Tag="LOC_ABILITY_RECEIVE_ASTROLOGY_RING_BONUS_DESCRIPTION">
@@ -17,26 +17,46 @@
     <LocalizedText>
     <!-- Simplified Chinese -->
         <Row Tag="LOC_LOADING_INFO_LEADER_MONA_MONDSTANT" Language="zh_Hans_CN">
-            <Text>阿斯托洛吉斯·莫娜·梅姬斯图斯，作为水占术传承者中最具才华的一位，您洞悉提瓦特苍生的未来。无论世间有多少困难和挑战，都不能阻止您探索真理的渴望，为您的子民指引光明的道路，向着无尽的星空追求更高的境界吧，虚假之天不会是您的极限。</Text>
+            <Text>阿斯托洛吉斯·莫娜·梅姬斯图斯，作为水占术传承者中最具才华的一位，您洞悉提瓦特苍生的未来。无论世间有多少困难和挑战，都不能阻止您探索真理的渴望，为您的子民指引光明的道路，向着无尽的星空追求更高的境界吧。</Text>
         </Row>
-        <Row Tag="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_NAME" Language="zh_Hans_CN">
+        <Row Tag="LOC_ABILITY_ASTROLOGY_RING_NAME" Language="zh_Hans_CN">
             <Text>占星术支援</Text>
         </Row>
-        <Row Tag="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_DESCRIPTION" Language="zh_Hans_CN">
+        <Row Tag="LOC_ABILITY_ASTROLOGY_RING_DESCRIPTION" Language="zh_Hans_CN">
             <Text>使1单元格范围中的作战单位防御时 +10[ICON_Strength]战斗力。</Text>
         </Row>
         <Row Tag="LOC_ABILITY_RECEIVE_ASTROLOGY_RING_BONUS_DESCRIPTION" Language="zh_Hans_CN">
             <Text>与占星术士相邻 +10[ICON_Strength]防御战斗力。</Text>
         </Row>
-
+        <Row Tag="LOC_NOTIFICATION_MONA_TRADESCIENCE_TITLE" Language="zh_Hans_CN">
+            <Text>已将金币转换为科技值</Text>
+        </Row>
+        <Row Tag="LOC_NOTIFICATION_MONA_TRADESCIENCE_STRING_1" Language="zh_Hans_CN">
+            <Text>已向</Text>
+        </Row>
+        <Row Tag="LOC_NOTIFICATION_MONA_TRADESCIENCE_STRING_2" Language="zh_Hans_CN">
+            <Text>支付</Text>
+        </Row>
+        <Row Tag="LOC_NOTIFICATION_MONA_TRADESCIENCE_STRING_3" Language="zh_Hans_CN">
+            <Text>换取了</Text>
+        </Row>
+        <Row Tag="LOC_NOTIFICATION_MONA_RESEARCHREWARD_TITLE" Language="zh_Hans_CN">
+            <Text>获得科技研究奖励</Text>
+        </Row>
+        <Row Tag="LOC_NOTIFICATION_MONA_RESEARCHREWARD_STRING_1" Language="zh_Hans_CN">
+            <Text>完成一项科技研究获得了</Text>
+        </Row>
+        <Row Tag="LOC_NOTIFICATION_MONA_RESEARCHREWARD_STRING_2" Language="zh_Hans_CN">
+            <Text>金币奖励。</Text>
+        </Row>
     <!-- Traditional Chinese -->
         <Row Tag="LOC_LOADING_INFO_LEADER_MONA_MONDSTANT" Language="zh_Hant_HK">
-            <Text>阿斯托洛吉斯·莫娜·梅姬斯圖斯，作為水佔術傳承者中最具才華的一位，您洞悉提瓦特蒼生的未來。無論世間有多少困難和挑戰，都不能阻止您探索真理的渴望，為您的子民指引光明的道路，向著無盡的星空追求更高的境界吧，虛假之天不會是您的極限。</Text>
+            <Text>阿斯托洛吉斯·莫娜·梅姬斯圖斯，作為水佔術傳承者中最具才華的一位，您洞悉提瓦特蒼生的未來。無論世間有多少困難和挑戰，都不能阻止您探索真理的渴望，為您的子民指引光明的道路，向著無盡的星空追求更高的境界吧。</Text>
         </Row>
-        <Row Tag="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_NAME" Language="zh_Hant_HK">
+        <Row Tag="LOC_ABILITY_ASTROLOGY_RING_NAME" Language="zh_Hant_HK">
             <Text>占星術支援</Text>
         </Row>
-        <Row Tag="LOC_ABILITY_ASTROLOGIST_DEFENCE_RING_DESCRIPTION" Language="zh_Hant_HK">
+        <Row Tag="LOC_ABILITY_ASTROLOGY_RING_DESCRIPTION" Language="zh_Hant_HK">
             <Text>使1單元格範圍中的作戰單位防禦時 +10[ICON_Strength]戰鬥力。</Text>
         </Row>
         <Row Tag="LOC_ABILITY_RECEIVE_ASTROLOGY_RING_BONUS_DESCRIPTION" Language="zh_Hant_HK">
