@@ -57,7 +57,7 @@
 	</ModifierStrings>
 	<ModifierArguments>
 		<Row ModifierId="MOD_ASTROLOGY_RING_GRANT" Name="AbilityType" Value="ABILITY_RECEIVE_ASTROLOGY_RING_BONUS"/>
-		<Row ModifierId="MOD_ASTROLOGY_RING" Name="Value" Value="10"/>
+		<Row ModifierId="MOD_ASTROLOGY_RING" Name="Amount" Value="10"/>
 		<Row ModifierId="MOD_ASTROLOGY_RING_RANGE" Name="Amount" Value="1"/>
 	</ModifierArguments>
 	<RequirementSets>
@@ -76,7 +76,7 @@
 			<RequirementId>REQUIRES_UNIT_ADJACENT_TO_ASTROLOGIST</RequirementId>
 		</Row>
 		<Row>
-			<RequirementSetId>REQUIREMENTS_RECEIVE_ASTROLOGY_RING</RequirementSetId>
+			<RequirementSetId>REQUIREMENTS_DEFENDER_ASTROLOGY_RING</RequirementSetId>
 			<RequirementId>PLAYER_IS_DEFENDER_REQUIREMENTS</RequirementId>
 		</Row>
 	</RequirementSetRequirements>

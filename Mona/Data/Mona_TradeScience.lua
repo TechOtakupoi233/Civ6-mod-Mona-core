@@ -5,7 +5,7 @@ GAME_SPEED_MULTIPLIER = GameInfo.GameSpeeds[GAME_SPEED] and GameInfo.GameSpeeds[
 DebugON = true
 -- 回合计数器
 function TurnCounter()
-    -- 获取当前回合数，if回合数能被5整除
+    -- 判断回合数是否能被5整除
     if (Game.GetCurrentGameTurn() ~= nil and Game.GetCurrentGameTurn() % 5 == 0 ) then
         if DebugON then print("Turn " .. Game.GetCurrentGameTurn()) end
         MonaFinder()
